@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href='/style.css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script id="readButton" type="text/html"><label>
+            <input type="button" value='Not read yet' class="notReadYet"></label>
+        </script>
+        <script id="buttonBlock" type="text/html"><label></label>
+            <input type='button'; value='Delete book'; class='deleteButt'>
+        </script>
+    </head>
+    <body>
+        <div id='transparent' class='container'>
+        <div id='header-container'>
+            <h1>Personal library<hr></h1>
+        </div>
+        <div id='table-container' class="container">
+            <table id='booksTable' class='table'>
+                <thead>
+                <tr id='tableTitles'>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            </table>
+        </div>
+        <div id='button-container'>
+            <button id='addBook' type="button">NEW BOOK</button>
+        </div>
+        <div id='formContainer' class="formHidden">
+            <div class='row'>
+                <div class='col'>
+            <h3 id='form-h3'>Please fill the next field with the book information, 
+                nameless books can't be add to the library</h3>
+            </div>
+            <div class='col'>
+        <form id="form" >
+            <ul>
+                    <li>
+                        <h2 class='form-h2'>Title</h2>
+                        <label for="title"></label>
+                        <input id='title' type="text" class='form-control' required>
+                    </li>
+                    <li>
+                        <h2 class='form-h2'>Author</h2>
+                        <label for="author"></label>
+                        <input id='author' type="text" class='form-control'>
+                    </li>
+                    <li>
+                        <h2 class='form-h2'>Year</h2>
+                        <label for="year"></label>
+                        <input id='year' type="number" min="0" max="2020" class='form-control'>
+                    </li>
+                    <li>
+                        <h2 class='form-h2'>Pages</h2>
+                        <label for="pages"></label>
+                        <input id='pages' type="numer" min="1" max="3000" class='form-control'>
+                    </li>
+                    <li>
+                    <div id='col'>
+                        <button id='submit' type="submit" class='btn btn-block btn-primary'>Submit data</button>
+                        <button id='reset' type="reset" class='btn btn-block btn-secondary'>Clear</button>
+                        <button id='cancel' type='reset' class='btn btn-block btn-danger'>Cancel</button>
+                    </div>
+                    </li>
+            </ul>    
+            </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript" src="script.js"></script>

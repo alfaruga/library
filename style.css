@@ -1,0 +1,126 @@
+body{
+  background-image: url(/cover.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+table, th, td{
+  border-bottom: 1px solid #ddd;
+}
+th{
+  background-color: #66ccff;
+}
+th, td{
+  padding: 15px;
+}
+tr:nth-child(even){
+  background-color: #f3f3f3;
+}
+tr:hover{
+  background-color: #ccc;
+}
+table{
+  border-collapse: collapse;
+}
+li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+}
+.form-h2{
+  text-align: center;
+  color: whitesmoke; 
+}
+#transparent{
+  background-color: #f3f3f3;
+}
+#form-h3{
+  text-align: center;
+  padding: 3%;
+  color: white;
+}
+#col{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.formHidden{
+display: none;
+position: fixed;
+top: 0;
+}
+.formShowed{
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+.deleteButt {
+  color: #000;
+  font-size: 13px; 
+  line-height: 13px; 
+  padding: 9px; 
+  font-family: Georgia, serif; 
+  font-weight: normal; text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  border: 2px solid #000; 
+  display: inline-block;}
+.deleteButt:hover {
+  background: #000;
+}
+.deleteButt:active {
+  background: #000;
+} 
+.notReadYet {
+  color: rgb(255, 255, 255); font-size: 13px; 
+  line-height: 13px; 
+  padding: 9px; 
+  border-radius: 37px; 
+  font-family: Georgia, serif; 
+  font-weight: normal; text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  background-image: linear-gradient(to right, rgb(164, 28, 28) 0%, rgb(203, 35, 35) 50%, rgb(117, 20, 20) 100%); 
+  border: 2px solid rgb(164, 28, 28); 
+  display: inline-block;}
+.notReadYet:hover {
+  background: rgb(164, 28, 28); 
+}
+.notReadYet:active {
+  background: rgb(117, 20, 20); 
+}
+.read{
+  color: rgb(255, 255, 255); font-size: 13px; 
+  line-height: 13px; 
+  padding: 9px; 
+  border-radius: 37px; 
+  font-family: Georgia, serif; 
+  font-weight: normal; text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+  background-image: linear-gradient(to right, rgb(39, 164, 28) 0%, rgb(55, 203, 35) 50%, rgb(20, 117, 49) 100%); 
+  border: 2px solid rgb(28, 164, 73); 
+  display: inline-block;
+}
+.read:hover {
+  background: rgb(60, 164, 28); 
+}
+.read:active {
+  background: rgb(23, 117, 20); 
+}
