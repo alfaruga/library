@@ -8,6 +8,8 @@ Some details about this project:
 <ul>
 <li>It has an add book button that show a form to create a new entry; it <strong>must have a title</strong>
 , the other arguments are optional and the read status is <em>false</em> by default</li>
+<li>The form to add a new book has cancel, clear and send buttons.</li>
+  <li>The send is block by html requiered attribute in the name and it prevents to add future years (2020) and ridiculously large page numbers</li>
 <li>Every book has a read status that can be toggled and a delete button</li>
 <li>The delete button prompts a mesagge to confirm the elimination of that entry, also it double checks by asking for the
 <strong>exact name</strong> of the book to delete.</li>
