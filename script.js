@@ -104,21 +104,17 @@ cancel.addEventListener('click',(e) => {
     form.classList.remove('formShowed')
 })
 formContainer.addEventListener('submit', (e) =>{
-    alert('after making book data');
     const title = document.getElementById('title').value;
     const author = document.getElementById('author').value || 'Unknown author';
     const year = document.getElementById('year').value || '-';
     const pages = document.getElementById('pages').value || '-';
     addBookToLibrary(title, author, year, pages);
-    alert('after adding book');
     updateLocalStorage();
-    alert('hello');
 })
 loadLocalStorage();
 let readButts = document.querySelectorAll('.notReadYet, .read');
 readStatusReloadPage();
 let allDeleteButtons = document.querySelectorAll('.deleteButt');
-console.log(allDeleteButtons);
 
 allDeleteButtons.forEach(item => {
     item.addEventListener('click', (e) => {
@@ -154,7 +150,6 @@ allDeleteButtons.forEach(item => {
             buttonClassUpdater(butt);
             let bookId = butt.parentElement.parentElement.parentElement.parentElement.id;
             let bookReadStatus = myLibrary[bookId].read;
-            console.log(bookId, bookReadStatus)
             myLibrary[bookId].read = !(bookReadStatus);
             updateLocalStorage();
             location.reload();        
